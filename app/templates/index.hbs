@@ -1,0 +1,7 @@
+{{input type="text"  placeholder="Search" value=filterStr}}
+<ul>
+  {{#each contact in model}}
+    <li>{{#link-to 'contact' contact.id}}{{contact.name}}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>
